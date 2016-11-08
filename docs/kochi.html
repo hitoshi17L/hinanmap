@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="高知県の避難所等の情報を掲載しています。">
+	<meta property="og:title" content="高知県避難マップ" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://hinanmap.webcrow.jp/kochi.html" />
+    <meta property="og:image" content="http://hinanmap.webcrow.jp/img/top.png" />
+    <meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="高知県避難マップ" />
+	<meta name="twitter:description" content="高知県の避難所等の情報を掲載しています。" />
+	<meta name="twitter:image" content="http://iamhere.webcrow.jp/img/top.png" />
+    <meta name="author" content="">
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" >
+	<link rel="stylesheet" href="css/map.css" />
+	<link rel="stylesheet" href="css/leaflet.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/font-awesome.css" />
+	<link rel="stylesheet" href="css/slidebars.css" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <title>高知県避難マップ</title>
+    <script src="js/jquery-1.12.0.min.js"></script>
+	<script src="js/slidebars.js"></script>
+    <script src="data/kochi/st.geojson"></script>
+    <script src="data/kochi/k.geojson"></script>
+    <script src="data/kochi/o.geojson"></script>
+    <script type="text/javascript" src="js/leaflet.js"></script>
+    <script type="text/javascript"  src="js/map.js"></script>
+    <script type="text/javascript"  src="js/top.js"></script>
+	<script type="text/javascript">
+    (function($) {
+        $(document).ready(function() {
+            $.slidebars();
+        });SS
+    }) (jQuery);
+	</script>
+  </head>
+
+  <body onLoad="kc_ini()">  
+	<!-- Slide bars -->
+	<div id="slide" class="sb-slide">
+
+    <div id ="toggle" class="sb-toggle-right">
+        <i class="fa fa-bars"></i>
+    </div>
+    
+	</div>
+	
+	<div id ="menu" class="sb-slidebar sb-right">
+		<a href = "index.html">ＨＯＭＥ</a><br>
+		<a href = "app.html">説明書</a><br>
+		<a href = "rule.html">利用規約</a><br>
+		<a href = "link.html">関連リンク</a><br><br>
+		―プルダウンリスト―
+		<select id="pref" style="font-size: 20px;width: 102px;" onChange="view()">
+			<option>都道府県選択</option>
+			<option value="hokkaido">北海道</option>
+			<option value="aomori">青森県</option>
+			<option value="akita">秋田県</option>
+			<option value="iwate">岩手県</option>
+			<option value="yamagata">山形県</option>
+			<option value="miyagi">宮城県</option>
+			<option value="fukushima">福島県</option>
+			<option value="nigata">新潟県</option>
+			<option value="tiba">千葉県</option>
+			<option value="tochigi">栃木県</option>
+			<option value="gunma">群馬県</option>
+			<option value="saitama">埼玉県</option>
+			<option value="ibaragi">茨城県</option>
+			<option value="tokyo">東京都</option>
+			<option value="kanagawa">神奈川県</option>
+			<option value="yamanashi">山梨県</option>
+			<option value="nagano">長野県</option>
+			<option value="shizuoka">静岡県</option>
+			<option value="toyama">富山県</option>
+			<option value="ishikawa">石川県</option>
+			<option value="gifu">岐阜県</option>
+			<option value="aichi">愛知県</option>
+			<option value="mie">三重県</option>
+			<option value="fukui">福井県</option>
+			<option value="shiga">滋賀県</option>
+			<option value="kyoto">京都府</option>
+			<option value="nara">奈良県</option>
+			<option value="osaka">大阪府</option>
+			<option value="wakayama">和歌山県</option>
+			<option value="hyogo">兵庫県</option>
+			<option value="tottori">鳥取県</option>
+			<option value="okayama">岡山県</option>
+			<option value="shimane">島根県</option>
+			<option value="hiroshima">広島県</option>
+			<option value="yamaguchi">山口県</option>
+			<option value="kagawa">香川県</option>
+			<option value="tokushima">徳島県</option>
+			<option value="ehime">愛媛県</option>
+			<option value="kochi">高知県</option>
+			<option value="fukuoka">福岡県</option>
+			<option value="saga">佐賀県</option>
+			<option value="nagasaki">長崎県</option>
+			<option value="oita">大分県</option>
+			<option value="kumamoto">熊本県</option>
+			<option value="miyazaki">宮埼県</option>
+			<option value="kagoshima">鹿児島県</option>
+			<option value="okinawa">沖縄県</option>
+		</select>
+	</div>
+		
+	<div id="sb-site" class="main_content">
+  	<center>
+  			<h2>高知県避難マップ</h2>
+
+		<div class="sns">
+<a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja">ツイート</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+		<div class="fb-like" data-href="http://hinanmap.webcrow.jp/kochi.html" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div><br>
+		<img src ='img/linebutton.png' width='82px' height='20px' alt="LINEで送る" onclick="line()" class="mlc">
+		<img src ="img/mail.png" border ="0" width='82px' height='20px' alt="メールで送る" onclick="mail()" class="mlc">
+		</div>
+		<div class="comment">
+		<i class="fa fa-folder-open" aria-hidden="true"></i> 避難所一覧
+		<form class="ch">
+		<label><input type="checkbox" id="st" onclick="st_checked();"><span id = "ln">小・中学校</span></label><br>
+		<label><input type="checkbox" id="k" onclick="k_checked();"><span id = "ln">公　　　園</span></label><br>
+		<label><input type="checkbox" id="o" onclick="o_checked();"><span id = "ln">その他避難所</span></label><br>
+		</form>
+		</div>
+		<div class="comment">
+		<div><i class="fa fa-cogs" aria-hidden="true"></i> 操作機能</div>
+		・現在地表示 <span value="現在地取得" onclick="GPS()"><i class="fa fa-bullseye" id ="mln"></i></span><br>
+		・範囲円描画<br>
+		<select id="circle" style="font-size: 16px;" onChange="hankei()">
+			<option value="0">選択</option>
+			<option value="1">半径1km</option>
+			<option value="2">半径2km</option>
+			<option value="3">半径3km</option>
+			<option value="4">半径5km</option>
+			<option value="5">半径10km</option>
+		</select>
+			<br>
+		</div>
+		<div id="map">
+		</div>	
+		<br>
+		<div id ="app">
+		<i class="fa fa-map-marker" aria-hidden="true"></i> このマップについて<br>
+		
+		</div><br>
+		<div id ="app2">
+		<i class="fa fa-cogs" aria-hidden="true"></i> 操作機能について<br>
+		現在地表示…ＧＰＳを用いて現在地を表示します。<br>
+		範囲円描画…地図の中央から指定した半径の範囲円を描きます。最寄りの避難所までのおおよその距離が視覚的に分かるようになります。
+		</div>
+		<br>
+		<div id ="qr_code">
+		<i class="fa fa-qrcode fa-lg" aria-hidden="true"></i> ＱＲコード<br>
+		<table><tr><td style="vertical-align: top;">
+		<img src="img/qr/kc.gif">
+		</td><td style="vertical-align: top;">
+		このマップのＱＲコードです。スマートフォン等でアクセスする際にご利用ください。
+		</td></tr></table>
+		</div>
+		<div id ="button1">
+		<i class="fa fa-desktop" aria-hidden="true"></i> 参考文献<br>
+		<div id ="bi_memo"></div>
+		・国土交通省国土政策局「国土数値情報（避難施設、H24年度）」
+		</div>
+		</div>
+
+	<div id="footer">&copy; 仁志
+	</div>
+	</center>
+	</div>
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+  </body>
+</html>
