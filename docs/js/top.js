@@ -3,145 +3,145 @@ var map; var geos; var geot; var geok; var geoo; var center; var circle; var mar
 function view(){
 
 	if(document.getElementById("pref").value == "hokkaido"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/hokkaido.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/hokkaido.html";
 	}
 	else if(document.getElementById("pref").value == "aomori"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/aomori.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/aomori.html";
 	}
 	else if(document.getElementById("pref").value == "akita"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/akita.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/akita.html";
 	}
 	else if(document.getElementById("pref").value == "iwate"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/iwate.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/iwate.html";
 	}
 	else if(document.getElementById("pref").value == "yamagata"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/yamagata.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/yamagata.html";
 	}
 	else if(document.getElementById("pref").value == "miyagi"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/miyagi.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/miyagi.html";
 	}
 	else if(document.getElementById("pref").value == "fukushima"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/fukushima.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/fukushima.html";
 	}
 	else if(document.getElementById("pref").value == "nigata"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/nigata.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/nigata.html";
 	}
 	else if(document.getElementById("pref").value == "tiba"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/tiba.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/tiba.html";
 	}
 	else if(document.getElementById("pref").value == "tochigi"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/tochigi.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/tochigi.html";
 	}
 	else if(document.getElementById("pref").value == "gunma"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/gunma.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/gunma.html";
 	}
 	else if(document.getElementById("pref").value == "saitama"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/saitama.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/saitama.html";
 	}
 	else if(document.getElementById("pref").value == "ibaragi"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/ibaragi.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/ibaragi.html";
 	}
 	else if(document.getElementById("pref").value == "tokyo"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/tokyo.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/tokyo.html";
 	}
 	else if(document.getElementById("pref").value == "kanagawa"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/kanagawa.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/kanagawa.html";
 	}
 	else if(document.getElementById("pref").value == "yamanashi"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/yamanashi.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/yamanashi.html";
 	}
 	else if(document.getElementById("pref").value == "nagano"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/nagano.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/nagano.html";
 	}
 	else if(document.getElementById("pref").value == "shizuoka"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/shizuoka.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/shizuoka.html";
 	}
 	else if(document.getElementById("pref").value == "toyama"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/toyama.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/toyama.html";
 	}
 	else if(document.getElementById("pref").value == "ishikawa"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/ishikawa.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/ishikawa.html";
 	}
 	else if(document.getElementById("pref").value == "gifu"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/gifu.html";	
+		location.href = "https://linkevery2s.github.io/hinanmap/gifu.html";	
 	}
 	else if(document.getElementById("pref").value == "aichi"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/aichi.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/aichi.html";
 	}
 	else if(document.getElementById("pref").value == "mie"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/mie.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/mie.html";
 	}
 	else if(document.getElementById("pref").value == "fukui"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/fukui.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/fukui.html";
 	}
 	else if(document.getElementById("pref").value == "shiga"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/shiga.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/shiga.html";
 	}
 	else if(document.getElementById("pref").value == "kyoto"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/ktoto.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/ktoto.html";
 	}
 	else if(document.getElementById("pref").value == "nara"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/nara.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/nara.html";
 	}
 	else if(document.getElementById("pref").value == "osaka"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/osaka.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/osaka.html";
 	}
 	else if(document.getElementById("pref").value == "wakayama"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/wakayama.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/wakayama.html";
 	}
 	else if(document.getElementById("pref").value == "hyogo"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/hyogo.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/hyogo.html";
 	}
 	else if(document.getElementById("pref").value == "tottori"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/tottori.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/tottori.html";
 	}
 	else if(document.getElementById("pref").value == "okayama"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/okayama.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/okayama.html";
 	}
 	else if(document.getElementById("pref").value == "shimane"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/shimane.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/shimane.html";
 	}
 	else if(document.getElementById("pref").value == "hiroshima"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/hiroshima.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/hiroshima.html";
 	}
 	else if(document.getElementById("pref").value == "yamaguchi"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/yamaguchi.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/yamaguchi.html";
 	}
 	else if(document.getElementById("pref").value == "kagawa"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/kagawa.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/kagawa.html";
 	}
 	else if(document.getElementById("pref").value == "tokushima"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/tokushima.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/tokushima.html";
 	}
 	else if(document.getElementById("pref").value == "ehime"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/ehime.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/ehime.html";
 	}
 	else if(document.getElementById("pref").value == "kochi"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/kochi.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/kochi.html";
 	}
 	else if(document.getElementById("pref").value == "fukuoka"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/fukuoka.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/fukuoka.html";
 	}
 	else if(document.getElementById("pref").value == "saga"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/saga.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/saga.html";
 	}
 	else if(document.getElementById("pref").value == "nagasaki"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/nagasaki.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/nagasaki.html";
 	}
 	else if(document.getElementById("pref").value == "oita"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/oita.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/oita.html";
 	}
 	else if(document.getElementById("pref").value == "kumamoto"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/kumamoto.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/kumamoto.html";
 	}
 	else if(document.getElementById("pref").value == "miyazaki"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/miyazaki.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/miyazaki.html";
 	}
 	else if(document.getElementById("pref").value == "kagoshima"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/kagoshima.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/kagoshima.html";
 	}
 	else if(document.getElementById("pref").value == "okinawa"){
-		location.href = "https://hitoshi17l.github.io/hinanmap/okinawa.html";
+		location.href = "https://linkevery2s.github.io/hinanmap/okinawa.html";
 	}
 	else{
 	}
